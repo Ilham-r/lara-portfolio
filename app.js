@@ -11,6 +11,4 @@ app.get("/portfolio",function(req , res){
 app.get("/about",function(req , res){
   res.sendFile(__dirname+"/about.html");
 });
-app.listen(3000, function(){
-  console.log("sarver has started");
-});
+app.listen(process.env.PORT);
